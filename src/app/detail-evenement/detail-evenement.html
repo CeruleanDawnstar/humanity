@@ -1,0 +1,22 @@
+<div class="container">
+
+
+    <h3>Evènements qui ont changé l'humanité</h3>
+<div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="{{ selectedEvenement.urlPhoto }}" class="card-img" alt="img">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ selectedEvenement.titre }}</h5>
+          <p class="card-text">{{ selectedEvenement.description }}</p>
+          <!-- <p class="card-text">{{ detailInvention.description }}</p> -->
+          <button type="button" class="btn btn-outline-warning" (click)="navigateToList()">Retour</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

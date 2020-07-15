@@ -1,0 +1,22 @@
+<div class="container">
+
+
+    <h3>Inventions de l'Homme à travers les Ages</h3>
+<div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="{{ selectedInvention.urlPhoto }}" class="card-img" alt="img">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ selectedInvention.titre }}</h5>
+          <p class="card-text">{{ selectedInvention.description }}</p>
+          <!-- <p class="card-text">{{ detailInvention.description }}</p> -->
+          <button type="button" class="btn btn-outline-warning" (click)="navigateToList()">Retour</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

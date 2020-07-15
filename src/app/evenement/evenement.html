@@ -1,0 +1,33 @@
+<div class="container">
+
+    <h3>Evènements qui ont changé l'humanité</h3>
+    
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Filtrer par Epoque
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" (click)="returnEventPrehistoire(evenement)">Préhistoire</a>
+        <a class="dropdown-item" href="#">Antiquité</a>
+        <a class="dropdown-item" href="#">Moyen Age</a>
+        <a class="dropdown-item" href="#">Epoque Moderne</a>
+        <a class="dropdown-item" href="#">Epoque Contemporain</a>
+      </div>
+    </div>
+
+<div class="card" *ngFor="let evenement of evenements">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="{{ evenement.urlPhoto }}" class="card-img" alt="img">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ evenement.titre }}</h5>
+          <p class="card-text">{{ evenement.description }}</p>
+          <button type="button" class="btn btn-outline-warning" (click)="navigateToDetails(evenement)">Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

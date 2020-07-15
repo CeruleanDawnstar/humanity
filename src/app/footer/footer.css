@@ -1,0 +1,26 @@
+p {
+    margin-left: 45px;
+}
+
+a {
+    font-size: 12px;
+    /* padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px; */
+    color: #ffc107;
+}
+
+#Fgauche {
+    float : left;
+    width : 50%;
+}
+
+#Fdroite {
+    float : right;
+    width : 50%;
+}
+
+section {
+    background-color: #2c2a26;
+}

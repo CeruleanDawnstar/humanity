@@ -1,0 +1,35 @@
+<div class="container">
+
+
+    <h3>Inventions de l'Homme à travers les Ages</h3>
+
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Filtrer par Epoque
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Préhistoire</a>
+        <a class="dropdown-item" href="#">Antiquité</a>
+        <a class="dropdown-item" href="#">Moyen Age</a>
+        <a class="dropdown-item" href="#">Epoque Moderne</a>
+        <a class="dropdown-item" href="#">Epoque Contemporain</a>
+      </div>
+    </div>
+
+<div class="card" *ngFor="let invention of inventions">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="{{ invention.urlPhoto }}" class="card-img" alt="feu">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ invention.titre }}</h5>
+          <p class="card-text">{{ invention.description }}</p>
+          <button type="button" class="btn btn-outline-warning" (click)="navigateToDetails(invention)">Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
