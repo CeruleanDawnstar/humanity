@@ -3,11 +3,12 @@
     <h3>Evènements qui ont changé l'humanité</h3>
     
     <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Filtrer par Epoque
-      </button>
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Filtrer par époque
+      </a>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" (click)="returnEventPrehistoire(evenement)">Préhistoire</a>
+        <!-- <a class="dropdown-item" (click)="returnEventPrehistoire(evenement)">Préhistoire</a> -->
+        <a class="dropdown-item" href="returnEventPrehistoire(evenement)">Préhistoire</a>
         <a class="dropdown-item" href="#">Antiquité</a>
         <a class="dropdown-item" href="#">Moyen Age</a>
         <a class="dropdown-item" href="#">Epoque Moderne</a>
